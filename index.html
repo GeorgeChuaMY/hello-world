@@ -5,16 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello World</title>
   <style>
-    html, body { height: 100%; margin: 0; }
+    html, body { min-height: 100%; margin: 0; }
     body {
       display: flex; align-items: center; justify-content: center;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: #f6f5f1; color: #1f1e1c;
+      padding: 3rem 1.5rem; box-sizing: border-box; min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f6f1e4; color: #2a2520;
     }
-    h1 { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 700; letter-spacing: -0.02em; }
+    main { max-width: 34rem; text-align: center; }
+    h1 {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 700;
+      letter-spacing: -0.02em; margin: 0 0 2.5rem;
+    }
+    h2 { font-size: 1.25rem; font-style: italic; font-weight: normal; margin: 0 0 1.5rem; }
+    .poem { text-align: left; display: inline-block; font-size: 1.1rem; line-height: 1.7; }
+    .poem p { margin: 0; }
+    .poem .couplet { margin-top: 0.75rem; padding-left: 1.5rem; }
+    .byline { margin-top: 2rem; font-size: 0.95rem; color: #7a6f60; font-style: italic; }
   </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
+  <main>
+    <h1>Hello, World!</h1>
+    <h2>Sonnet: Upon a First Greeting</h2>
+    <div class="poem">
+      <p>O World, to thee I first lift up my voice,</p>
+      <p>A humble greeting from a page new-born;</p>
+      <p>No grander words could be a truer choice</p>
+      <p>Than &ldquo;Hello&rdquo; spoke upon this coded morn.</p>
+      <p>Though I be naught but tags and simple style,</p>
+      <p>A single line upon a server cast,</p>
+      <p>Yet doth my greeting cross the seas the while,</p>
+      <p>And reach thine eyes, though leagues be ne&rsquo;er so vast.</p>
+      <p>Let coders old recall their first such cry,</p>
+      <p>When screens did glow with these two words alone;</p>
+      <p>For every work that reacheth to the sky</p>
+      <p>Began with &ldquo;Hello&rdquo; as its cornerstone.</p>
+      <div class="couplet">
+        <p>So long as men can browse, or eyes can see,</p>
+        <p>So long lives this, and says &ldquo;Hello&rdquo; to thee.</p>
+      </div>
+    </div>
+    <p class="byline">&mdash; after the manner of William Shakespeare</p>
+  </main>
 </body>
 </html>
